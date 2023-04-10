@@ -1,0 +1,58 @@
+.first {
+
+    justify-content: center;
+
+    font-size: 14pt;
+    font-style: oblique;
+    height: 30vh;
+    min-height: 35em;
+    position: relative;
+    text-align: center;
+    padding: 10% 60px 60px 60px;
+
+    animation: fadeInAnimation ease 6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.first h2 {
+    display: inline-block;
+    font-size: 4em;
+    opacity: 0.8;
+    padding: 0.7em 2em;
+    position: relative;
+    z-index: 1;
+}
+
+.first h2:before,
+.first h2:after {
+
+    background: #fff;
+    content: '';
+    display: block;
+    height: 2px;
+    position: absolute;
+    width: 100%;
+}
+
+.first h2:before {
+    top: 0;
+    right: 0;
+}
+
+.first h2:after {
+    bottom: 0;
+    right: 0;
+}
